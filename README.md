@@ -53,5 +53,5 @@ This portfolio demonstrates:
 
 ## Contact
 **Email:** jeridanwright@gmail.com
-**LinkedIn:** https://www.linkedin.com/in/jeridan-wright-095a6b225/  
+**LinkedIn:** https://www.linkedin.com/in/jeridan-wright  
 **Portfolio Website:** *https://jeridanwright.github.io/#about*
