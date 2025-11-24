@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #ccc;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 2rem auto;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jeridan Wright</h1>
+        <p>PLC / Automation Enthusiast • Apprentice Electrician • Maker</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <div class="card" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm an aspiring Shift Control Technician with a growing interest in 
+                PLC programming, automation, and electrical systems. I’m currently 
+                building hands-on projects with Arduino, LogixPro, and ladder logic 
+                simulations to prepare for my apprenticeship.
+            </p>
+        </div>
+
+        <!-- Projects -->
+        <div class="card" id="projects">
+            <h2>Projects</h2>
+
+            <h3>Traffic Light PLC Simulation</h3>
+            <p>
+                A LogixPro ladder logic program simulating a full intersection 
+                with timing, sequencing, and fault-safe behavior.
+            </p>
+
+            <h3>Automatic Conveyor System (Arduino Opta)</h3>
+            <p>
+                Uses sensors and relay outputs to control a small conveyor model 
+                with start/stop buttons and emergency stop logic.
+            </p>
+
+            <h3>Motor Start/Stop Circuit</h3>
+            <p>
+                A basic PLC-controlled motor starter using latching logic 
+                and overload detection.
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <div class="card" id="contact">
+            <h2>Contact</h2>
+            <p>Email: <strong>jeridanwright@gmail.com</strong></p>
+            <p>GitHub: <strong>github.com/jeridanwright</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Jeridan Wright — Portfolio
+    </footer>
+</body>
+</html>
