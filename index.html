@@ -228,6 +228,31 @@
 
             <div class="project-item">
                 <div class="project-content">
+                    <h3>Automated Lead/Lag Pump Control System</h3>
+                    
+                    <div class="tech-stack">
+                        <span class="badge">OpenPLC</span>
+                        <span class="badge">Process Simulation</span>
+                        <span class="badge badge-safety">Redundancy Logic</span>
+                    </div>
+
+                    <p>
+                        <strong>The Challenge:</strong> Industrial fluid management systems require redundant pump setups to prevent equipment failure and maintain process stability under varying demands.
+                    </p>
+                    <p>
+                        <strong>The Solution:</strong> Designed and simulated a continuous-process PLC system that manages tank levels using a dual-pump configuration, incorporating alternating duty cycles and fail-safe triggers.
+                    </p>
+                    
+                    <ul class="feature-list">
+                        <li><strong>Process Simulation:</strong> Built a simulated physical environment using OpenPLC timer (TON) and arithmetic blocks (ADD/SUB) to model continuous drain rates that deliberately exceed single-pump fill capacity.</li>
+                        <li><strong>Setpoint Logic:</strong> Configured relational comparators (LE/GE) as virtual float switches to establish precise start/stop triggers at 10%, 40%, 60%, and 80% tank capacity.</li>
+                        <li><strong>Redundancy & Alternation:</strong> Engineered a priority toggling system paired with Set/Reset latching logic to alternate "Lead" and "Lag" roles after every complete cycle, ensuring even mechanical wear.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-content">
                     <h3>Automatic Conveyor System</h3>
                     <div class="tech-stack">
                         <span class="badge">Arduino Opta</span>
@@ -235,19 +260,6 @@
                     </div>
                     <p>
                         Uses sensors and relay outputs to control a small conveyor model with start/stop buttons and emergency stop logic.
-                    </p>
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-content">
-                    <h3>Motor Start/Stop Circuit</h3>
-                     <div class="tech-stack">
-                        <span class="badge">Ladder Logic</span>
-                        <span class="badge">Motor Control</span>
-                    </div>
-                    <p>
-                        A basic PLC-controlled motor starter using latching logic and overload detection.
                     </p>
                 </div>
             </div>
@@ -265,7 +277,7 @@
     </div>
 
     <footer>
-        © 2025 Jeridan Wright — Portfolio
+        © 2026 Jeridan Wright — Portfolio
     </footer>
 </body>
 </html>
