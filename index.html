@@ -126,28 +126,6 @@
             color: #222;
         }
 
-        /* Tech Stack Badges */
-        .tech-stack {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 1rem;
-        }
-
-        .badge {
-            background-color: #e0e0e0;
-            color: #333;
-            padding: 4px 10px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: bold;
-        }
-
-        .badge-safety {
-            background-color: #ffeeba;
-            color: #856404;
-        }
-
         .feature-list {
             margin-top: 1rem;
             padding-left: 1.2rem;
@@ -208,12 +186,6 @@
                 <div class="project-content">
                     <h3>IEC 61131-3 Traffic Control System</h3>
                     
-                    <div class="tech-stack">
-                        <span class="badge">OpenPLC</span>
-                        <span class="badge">Ladder Logic (LD)</span>
-                        <span class="badge badge-safety">Safety Interlocks</span>
-                    </div>
-
                     <p>
                         Designed and simulated a comprehensive 4-way traffic control system following industrial programming standards. The primary focus was implementing "Fail-Safe" logic to ensure safety during power loss.
                     </p>
@@ -222,6 +194,7 @@
                         <li><strong>Fail-Safe Architecture:</strong> Implemented a "System Active" permissive that forces the intersection to an "All Red" state immediately upon Emergency Stop.</li>
                         <li><strong>Conflict Prevention:</strong> Utilized Comparison Blocks (LE/GT) to mathematically ensure opposing green lights can never be active simultaneously.</li>
                         <li><strong>Clean Code:</strong> Structured logic with parallel branches and consistent naming conventions for maintainability.</li>
+                        <li><strong>Platform:</strong> Developed using OpenPLC and Ladder Logic (LD).</li>
                     </ul>
                 </div>
             </div>
@@ -230,12 +203,6 @@
                 <div class="project-content">
                     <h3>Automated Lead/Lag Pump Control System</h3>
                     
-                    <div class="tech-stack">
-                        <span class="badge">OpenPLC</span>
-                        <span class="badge">Process Simulation</span>
-                        <span class="badge badge-safety">Redundancy Logic</span>
-                    </div>
-
                     <p>
                         <strong>The Challenge:</strong> Industrial fluid management systems require redundant pump setups to prevent equipment failure and maintain process stability under varying demands.
                     </p>
@@ -247,6 +214,7 @@
                         <li><strong>Process Simulation:</strong> Built a simulated physical environment using OpenPLC timer (TON) and arithmetic blocks (ADD/SUB) to model continuous drain rates that deliberately exceed single-pump fill capacity.</li>
                         <li><strong>Setpoint Logic:</strong> Configured relational comparators (LE/GE) as virtual float switches to establish precise start/stop triggers at 10%, 40%, 60%, and 80% tank capacity.</li>
                         <li><strong>Redundancy & Alternation:</strong> Engineered a priority toggling system paired with Set/Reset latching logic to alternate "Lead" and "Lag" roles after every complete cycle, ensuring even mechanical wear.</li>
+                        <li><strong>Platform:</strong> Developed using OpenPLC.</li>
                     </ul>
                 </div>
             </div>
@@ -254,13 +222,12 @@
             <div class="project-item">
                 <div class="project-content">
                     <h3>Automatic Conveyor System</h3>
-                    <div class="tech-stack">
-                        <span class="badge">Arduino Opta</span>
-                        <span class="badge">Hardware Integration</span>
-                    </div>
                     <p>
                         Uses sensors and relay outputs to control a small conveyor model with start/stop buttons and emergency stop logic.
                     </p>
+                    <ul class="feature-list">
+                        <li><strong>Platform:</strong> Developed using Arduino Opta (Hardware Integration).</li>
+                    </ul>
                 </div>
             </div>
 
